@@ -8,7 +8,9 @@ body{
 }
 
 .main-div{
-    width: 30%;
+    min-width: 30%;
+    max-width: 50%;
+    min-height: auto;
     margin: 0 auto;
     background-color: #fff;
     text-align: center;
@@ -19,6 +21,12 @@ body{
     background-color: #5DADE2;
     color: white;
     font-size: 50px;
+}
+
+.heading>p{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .display{
@@ -40,6 +48,13 @@ input{
     outline: none;
     font-size: 30px;
     text-align: right;
+    flex-grow: 1;
+    width: 90%;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
 }
 
 .button{
@@ -53,6 +68,7 @@ button{
     background-color: #3498DB;
     font-size: larger;
     color: white;
+    flex-grow: 1;
 }
 
 button:onclick{
